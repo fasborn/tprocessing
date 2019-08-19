@@ -68,7 +68,7 @@ class tdat:
                 print('We have found city "'+ item + '"')
                 temp = self.catal_map[item]
                 temp = self.lis_dict[temp]
-                df = pd.read_fwf(way+"/"+temp, header = None, colspecs=self.widths)
+                df = pd.read_fwf(self.way+"/"+temp, header = None, colspecs=self.widths)
                 df.columns =  columns
                 return df
         return "No such city presented"
