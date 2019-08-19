@@ -57,7 +57,7 @@ class tdat:
     def read_df(self, city, columns = list_of_columns):
         temp = self.catal_map[city]
         temp = self.lis_dict[temp]
-        df = pd.read_fwf(way+"/"+temp, header = None, colspecs=self.widths)
+        df = pd.read_fwf(self.way+"/"+temp, header = None, colspecs=self.widths)
         df.columns =  columns
         return df
 
