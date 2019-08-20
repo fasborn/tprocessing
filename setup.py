@@ -8,7 +8,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(name="tprocessing",
-      version="0.0.6",
+      version="0.0.7",
       packages=["tprocessing"],
       url="https://github.com/fasborn/tprocessing",
       author="Fasborn",

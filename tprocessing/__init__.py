@@ -9,7 +9,7 @@ class tdat:
     def __init__(self, way, catalogue):
         self.onlyfiles = [f for f in listdir(way) if isfile(join(way, f))]
         self.catal = catalogue
-		self.way = way
+        self.way = way
         
         #Reading names of all files from a storage
         self.lis = pd.DataFrame(self.onlyfiles, columns = ["file"])
