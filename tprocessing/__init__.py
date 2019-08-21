@@ -71,5 +71,6 @@ class tdat:
                 temp = self.lis_dict[temp]
                 df = pd.read_fwf(self.way+"/"+temp, header = None, colspecs=self.widths)
                 df.columns =  columns
+				df["Date"] = pd.to_datetime((df.Год*10000+df.Месяц*100+df.День).apply(str),format='%Y%m%d', errors='coerce')
                 return df
         return "No such city presented"
